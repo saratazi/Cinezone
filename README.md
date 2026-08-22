@@ -29,7 +29,8 @@ A modern and responsive movie website where users can discover, search, and expl
 
 📸 Preview
 
-Add screenshots of your website here.
+<img width="1340" height="619" alt="image" src="https://github.com/user-attachments/assets/a736cc17-7a36-4019-8832-2d33345d0351" />
+
 
 📄 License
 
