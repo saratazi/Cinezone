@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1> Movie Finder </h1>
+        <h2> View and save your favourite movies 🎥 </h2>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for a movie...">
+            <button id="search-button"> Search </button>
+        </div>
+        <div class="view-buttons">
+            <button id="search-view-btn" class="active"> Search Results </button>
+            <button id="favorites-view-btn"> My Favourites </button>
+        </div>
+    </header>
+
+    <main>
+        <div id="search-results" class="movie-container active">
+            <!-- Search results will be displayed here -->
+        </div>
+
+        <div id="favorites" class="movie-container">
+            <!-- Favourites will be displayed here -->
+        </div>
+    </main>
+
+    <footer>
+        <p> Created by Mara </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
