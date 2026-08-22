@@ -1,12 +1,15 @@
 body {
     font-family: "Outfit", sans-serif;
-    background-color: #FBF2F1;
+    background-color: #fff5f5;
+    color: #3d1f1f;
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* HEADER */
 header {
-    color: #422623;
+    color: #8b1e2d;
     text-align: center;
     margin: 50px;
 }
@@ -20,36 +23,41 @@ header h2 {
     font-weight: 400;
 }
 
+/* SEARCH */
 #search-input {
     border-radius: 30px;
-    border: 1px solid #422623;
+    border: 1px solid #c6283d;
     height: 40px;
     width: 300px;
     font-family: "Outfit", sans-serif;
     text-align: center;
     margin: 5px;
     cursor: pointer;
+    background-color: white;
+    color: #3d1f1f;
 }
 
 #search-button {
     color: white;
     border-radius: 30px;
-    border: 1px solid #422623;
-    background-color: #422623;
+    border: 1px solid #c6283d;
+    background-color: #c6283d;
     height: 40px;
     width: 90px;
     font-family: "Outfit", sans-serif;
     text-align: center;
+    cursor: pointer;
 }
 
 #search-button:hover {
-    background-color: black;
+    background-color: #8b1e2d;
 }
 
 .search-container {
     margin: 20px;
 }
 
+/* VIEW BUTTONS */
 .view-buttons {
     display: flex;
     justify-content: center;
@@ -59,22 +67,24 @@ header h2 {
 .view-buttons button {
     color: white;
     border-radius: 30px;
-    border: 1px solid #422623;
-    background-color: #422623;
+    border: 1px solid #c6283d;
+    background-color: #c6283d;
     height: 40px;
     width: 200px;
     font-family: "Outfit", sans-serif;
     text-align: center;
-}
-
-button:hover {
     cursor: pointer;
 }
 
-.view-buttons button.active {
-    background-color: #6F3F3B;
+.view-buttons button:hover {
+    background-color: #8b1e2d;
 }
 
+.view-buttons button.active {
+    background-color: #8b1e2d;
+}
+
+/* MOVIES */
 .movie-container {
     display: none;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -90,8 +100,8 @@ button:hover {
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(139, 30, 45, 0.15);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .movie-card:hover {
@@ -115,7 +125,7 @@ button:hover {
 }
 
 .movie-release {
-    color: #666;
+    color: #777;
     font-size: 14px;
     margin-bottom: 10px;
 }
@@ -123,14 +133,14 @@ button:hover {
 .favorite-btn {
     background: none;
     border: none;
-    color: #666;
+    color: #777;
     cursor: pointer;
     font-size: 18px;
     padding: 5px;
 }
 
 .favorite-btn.active {
-    color: #f5c518;
+    color: #e63950;
 }
 
 .no-results {
@@ -138,14 +148,84 @@ button:hover {
     text-align: center;
     padding: 40px;
     font-size: 18px;
-    color: #666;
+    color: #777;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
-    background-color: #6F3F3B;
+    background-color: #8b1e2d;
     position: fixed;
     bottom: 0;
     width: 100%;
     color: white;
+    padding: 10px 0;
+}
+
+/* DARK MODE */
+body.dark-mode {
+    background-color: #181214;
+    color: #f5dddd;
+}
+
+body.dark-mode header {
+    color: #ff5c70;
+}
+
+body.dark-mode #search-input {
+    background-color: #241c1e;
+    color: white;
+    border-color: #ff5c70;
+}
+
+body.dark-mode #search-input::placeholder {
+    color: #c9aeb2;
+}
+
+body.dark-mode #search-button,
+body.dark-mode .view-buttons button {
+    background-color: #c6283d;
+    border-color: #ff5c70;
+}
+
+body.dark-mode #search-button:hover,
+body.dark-mode .view-buttons button:hover {
+    background-color: #ff4058;
+}
+
+body.dark-mode .view-buttons button.active {
+    background-color: #ff4058;
+}
+
+body.dark-mode .movie-card {
+    background-color: #241c1e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .movie-release,
+body.dark-mode .favorite-btn,
+body.dark-mode .no-results {
+    color: #c9aeb2;
+}
+
+body.dark-mode .favorite-btn.active {
+    color: #ff4058;
+}
+
+body.dark-mode footer {
+    background-color: #5c1420;
+}
+dark-mode-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #3d1f1f;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    cursor: pointer;
+}
+
+dark-mode-btn:hover {
+    background-color: #8b1e2d;
 }
