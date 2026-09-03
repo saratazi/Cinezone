@@ -25,7 +25,7 @@ A modern and responsive movie website where users can discover, search, and expl
 
 2. Open the project folder.
 
-3. Open "index.html" in your browser:saratazi.github.io/Cinezone.
+3. Open "index.html" in your browser: saratazi.github.io/Cinezone.
 
 📸 Preview
 
