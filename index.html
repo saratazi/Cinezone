@@ -56,6 +56,7 @@
 
     <footer>
         <p> Created by Sara </p>
+        <p>&copy; <span id="year"></span> Cinezone. All rights reserved.</p>
         <div class="social-links">
         <a href="https://www.linkedin.com/in/saratazi" target="_blank" aria-label="LinkedIn">
             <i class="fab fa-linkedin"></i>
@@ -73,6 +74,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
 
 </body>
 
