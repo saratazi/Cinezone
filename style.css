@@ -287,3 +287,13 @@ dark-mode-btn:hover {
 .social-links a:hover {
     transform: scale(1.2);
 }
+@media (max-width: 768px) {
+    #phone-form {
+        flex-direction: column;
+    }
+
+    #phone-input,
+    #phone-form button {
+        width: 100%;
+    }
+}
