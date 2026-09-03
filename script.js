@@ -332,3 +332,17 @@ darkModeBtn.addEventListener("click", () => {
         darkModeBtn.textContent = "🌙 Dark Mode";
     }
 });
+const phoneForm = document.getElementById("phone-form");
+const phoneInput = document.getElementById("phone-input");
+const phoneMessage = document.getElementById("phone-message");
+
+phoneForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const phoneNumber = phoneInput.value.trim();
+
+    if (phoneNumber) {
+        phoneMessage.textContent = "Thank you! Your phone number has been saved.";
+        phoneInput.value = "";
+    }
+});
