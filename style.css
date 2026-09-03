@@ -155,7 +155,7 @@ header h2 {
 footer {
     text-align: center;
     background-color: #8b1e2d;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     color: white;
