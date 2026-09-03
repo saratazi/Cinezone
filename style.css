@@ -229,3 +229,44 @@ dark-mode-btn {
 dark-mode-btn:hover {
     background-color: #8b1e2d;
 }
+.phone-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.phone-form h2 {
+    margin-bottom: 10px;
+}
+
+.phone-form p {
+    margin-bottom: 20px;
+}
+
+#phone-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#phone-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#phone-form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#phone-message {
+    margin-top: 15px;
+}
