@@ -21,7 +21,7 @@ A modern and responsive movie website where users can discover, search, and expl
 
 1. Clone the repository:
    
-   git clone https://github.com/saratazi/cinewave.git
+   git clone https://github.com/saratazi/cinezone.git
 
 2. Open the project folder.
 
