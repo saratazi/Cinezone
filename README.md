@@ -1,4 +1,5 @@
 #🎬 Cinezone
+
 link: https://saratazi.github.io/Cinezone
 
 A modern and responsive movie website where users can discover, search, and explore movies.
