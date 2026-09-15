@@ -1,4 +1,4 @@
-#🎬 Cinezone
+🎬 Cinezone
 
 link: https://saratazi.github.io/Cinezone
 
