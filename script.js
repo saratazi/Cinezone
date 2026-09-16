@@ -105,16 +105,6 @@ function displayMovies(movies, container) {
         `;
 
         container.appendChild(movieCard);
-        movieCard.addEventListener("click", async (e) => {
-            if (e.target.closest(".favorite-btn")) return;
-             const response = await fetch(
-                 `${BASE_URL}/movie/${movie.id}?api_key=${API_KEY)`
-            );
-            const details = await response.json();
-            alert(
-                 `${details.title}\n\n⭐ Rating: ${details.vote_average}\n📅 Release: ${details.release_date}\n\n${details.overview}`
-            );
-    });
 
         // Add event listener to favorite button
         const favoriteBtn = movieCard.querySelector(".favorite-btn");
