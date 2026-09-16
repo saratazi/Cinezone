@@ -6,7 +6,7 @@ const totalEl = document.getElementById("total");
 const activeEl = document.getElementById("active");
 const completedEl = document.getElementById("completed");
 const dateEl = document.getElementById("date"); // API configuration
-const API_KEY = "e3e67a17db844b4735380b87e232a8cd";
+const API_KEY = "377ac7aff243548dbeffa3f8f94300a0";
 const BASE_URL = "https://api.themoviedb.org/3";
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 
