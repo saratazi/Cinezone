@@ -288,12 +288,33 @@ dark-mode-btn:hover {
     transform: scale(1.2);
 }
 @media (max-width: 768px) {
-    #phone-form {
-        flex-direction: column;
+
+    header h1 {
+        font-size: 42px;
     }
 
-    #phone-input,
-    #phone-form button {
-        width: 100%;
+    #search-input {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .view-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .view-buttons button {
+        width: 220px;
+        margin-bottom: 10px;
+    }
+
+    .movie-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .movie-poster {
+        height: 220px;
     }
 }
