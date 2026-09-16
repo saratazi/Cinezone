@@ -289,32 +289,70 @@ dark-mode-btn:hover {
 }
 @media (max-width: 768px) {
 
-    header h1 {
-        font-size: 42px;
-    }
+  body {
+    overflow-x: hidden;
+  }
 
-    #search-input {
-        width: 90%;
-        max-width: 300px;
-    }
+  header h1 {
+    font-size: 60px;
+  }
 
-    .view-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
+  header p {
+    font-size: 18px;
+    padding: 0 15px;
+  }
 
-    .view-buttons button {
-        width: 220px;
-        margin-bottom: 10px;
-    }
+  #search-input {
+    width: 90%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 
-    .movie-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        padding: 10px;
-    }
+  #search-button {
+    width: 160px;
+    margin-top: 15px;
+  }
 
-    .movie-poster {
-        height: 220px;
-    }
+  .controls,
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .controls button,
+  .buttons-container button,
+  #dark-mode-btn {
+    width: 200px;
+  }
+
+  .movie-card {
+    width: 90%;
+    margin: auto;
+  }
+
+  .movie-poster {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    width: 100%;
+    margin: 0;
+    padding: 25px 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .social-links a {
+    font-size: 28px;
+  }
 }
