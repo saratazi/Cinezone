@@ -1,7 +1,8 @@
+/* BASE STYLES */
 body {
     font-family: "Outfit", sans-serif;
-    background-color: #fff5f5;
-    color: #3d1f1f;
+    background-color: #080808;
+    color: #e4e4e7;
     margin: 0;
     padding: 0;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -9,7 +10,7 @@ body {
 
 /* HEADER */
 header {
-    color: #8b1e2d;
+    color: #ffffff;
     text-align: center;
     margin: 50px;
 }
@@ -17,40 +18,53 @@ header {
 header h1 {
     font-size: 64px;
     margin: 0;
+    font-weight: 800;
 }
 
 header h2 {
     font-weight: 400;
+    color: #a1a1aa;
 }
 
 /* SEARCH */
 #search-input {
     border-radius: 30px;
-    border: 1px solid #c6283d;
+    border: 1px solid #27272a;
     height: 40px;
     width: 300px;
     font-family: "Outfit", sans-serif;
     text-align: center;
     margin: 5px;
     cursor: pointer;
-    background-color: white;
-    color: #3d1f1f;
+    background-color: #121212;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: #22c55e;
+    outline: none;
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
 }
 
 #search-button {
-    color: white;
+    color: #000000;
+    font-weight: 600;
     border-radius: 30px;
-    border: 1px solid #c6283d;
-    background-color: #c6283d;
+    border: none;
+    background-color: #22c55e;
     height: 40px;
     width: 90px;
     font-family: "Outfit", sans-serif;
     text-align: center;
     cursor: pointer;
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
+    transition: all 0.3s ease;
 }
 
 #search-button:hover {
-    background-color: #8b1e2d;
+    background-color: #16a34a;
+    box-shadow: 0 0 25px rgba(34, 197, 94, 0.7);
 }
 
 .search-container {
@@ -65,23 +79,29 @@ header h2 {
 }
 
 .view-buttons button {
-    color: white;
+    color: #22c55e;
     border-radius: 30px;
-    border: 1px solid #c6283d;
-    background-color: #c6283d;
+    border: 1px solid #22c55e;
+    background-color: #09090b;
     height: 40px;
     width: 200px;
     font-family: "Outfit", sans-serif;
     text-align: center;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .view-buttons button:hover {
-    background-color: #8b1e2d;
+    background-color: #22c55e;
+    color: #000000;
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.5);
 }
 
 .view-buttons button.active {
-    background-color: #8b1e2d;
+    background-color: #22c55e;
+    color: #000000;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.6);
 }
 
 /* MOVIES */
@@ -97,15 +117,18 @@ header h2 {
 }
 
 .movie-card {
-    background-color: white;
-    border-radius: 8px;
+    background-color: #121212;
+    border: 1px solid #1f1f23;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(139, 30, 45, 0.15);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .movie-card:hover {
     transform: translateY(-5px);
+    border-color: #22c55e;
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
 }
 
 .movie-poster {
@@ -121,11 +144,12 @@ header h2 {
 .movie-title {
     font-size: 16px;
     font-weight: bold;
+    color: #ffffff;
     margin-bottom: 5px;
 }
 
 .movie-release {
-    color: #777;
+    color: #a1a1aa;
     font-size: 14px;
     margin-bottom: 10px;
 }
@@ -133,14 +157,15 @@ header h2 {
 .favorite-btn {
     background: none;
     border: none;
-    color: #777;
+    color: #71717a;
     cursor: pointer;
     font-size: 18px;
     padding: 5px;
+    transition: color 0.2s ease;
 }
 
 .favorite-btn.active {
-    color: #e63950;
+    color: #22c55e;
 }
 
 .no-results {
@@ -148,128 +173,46 @@ header h2 {
     text-align: center;
     padding: 40px;
     font-size: 18px;
-    color: #777;
+    color: #71717a;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
-    background-color: #8b1e2d;
+    background-color: #050505;
+    border-top: 1px solid #18181b;
     position: relative;
     bottom: 0;
     width: 100%;
-    color: white;
-    padding: 10px 0;
+    color: #a1a1aa;
+    padding: 20px 0;
 }
 
-/* DARK MODE */
+/* DARK MODE OVERRIDES */
 body.dark-mode {
-    background-color: #181214;
-    color: #f5dddd;
+    background-color: #080808;
+    color: #e4e4e7;
 }
 
-body.dark-mode header {
-    color: #ff5c70;
-}
-
-body.dark-mode #search-input {
-    background-color: #241c1e;
-    color: white;
-    border-color: #ff5c70;
-}
-
-body.dark-mode #search-input::placeholder {
-    color: #c9aeb2;
-}
-
-body.dark-mode #search-button,
-body.dark-mode .view-buttons button {
-    background-color: #c6283d;
-    border-color: #ff5c70;
-}
-
-body.dark-mode #search-button:hover,
-body.dark-mode .view-buttons button:hover {
-    background-color: #ff4058;
-}
-
-body.dark-mode .view-buttons button.active {
-    background-color: #ff4058;
-}
-
-body.dark-mode .movie-card {
-    background-color: #241c1e;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
-
-body.dark-mode .movie-release,
-body.dark-mode .favorite-btn,
-body.dark-mode .no-results {
-    color: #c9aeb2;
-}
-
-body.dark-mode .favorite-btn.active {
-    color: #ff4058;
-}
-
-body.dark-mode footer {
-    background-color: #5c1420;
-}
 dark-mode-btn {
     margin-top: 20px;
     padding: 10px 20px;
-    border: none;
+    border: 1px solid #22c55e;
     border-radius: 25px;
-    background-color: #3d1f1f;
-    color: white;
+    background-color: #09090b;
+    color: #22c55e;
     font-family: "Outfit", sans-serif;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 dark-mode-btn:hover {
-    background-color: #8b1e2d;
-}
-.phone-form {
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 30px;
-    text-align: center;
-    border-radius: 15px;
-    background: #fff;
+    background-color: #22c55e;
+    color: #000000;
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.5);
 }
 
-.phone-form h2 {
-    margin-bottom: 10px;
-}
-
-.phone-form p {
-    margin-bottom: 20px;
-}
-
-#phone-form {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-#phone-input {
-    flex: 1;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-#phone-form button {
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-#phone-message {
-    margin-top: 15px;
-}
+/* SOCIALS */
 .social-links {
     display: flex;
     justify-content: center;
@@ -278,7 +221,7 @@ dark-mode-btn:hover {
 }
 
 .social-links a {
-    color: #422623;
+    color: #22c55e;
     font-size: 25px;
     text-decoration: none;
     transition: 0.3s;
@@ -286,73 +229,54 @@ dark-mode-btn:hover {
 
 .social-links a:hover {
     transform: scale(1.2);
+    color: #4ade80;
 }
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
 
-  body {
-    overflow-x: hidden;
-  }
+    header h1 {
+        font-size: 60px;
+    }
 
-  header h1 {
-    font-size: 60px;
-  }
+    #search-input {
+        width: 90%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
 
-  header p {
-    font-size: 18px;
-    padding: 0 15px;
-  }
+    #search-button {
+        width: 160px;
+        margin-top: 15px;
+    }
 
-  #search-input {
-    width: 90%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
+    .controls,
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
 
-  #search-button {
-    width: 160px;
-    margin-top: 15px;
-  }
+    .controls button,
+    .buttons-container button,
+    #dark-mode-btn {
+        width: 200px;
+    }
 
-  .controls,
-  .buttons-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
+    .movie-card {
+        width: 90%;
+        margin: auto;
+    }
 
-  .controls button,
-  .buttons-container button,
-  #dark-mode-btn {
-    width: 200px;
-  }
-
-  .movie-card {
-    width: 90%;
-    margin: auto;
-  }
-
-  .movie-poster {
-    width: 100%;
-    height: auto;
-  }
-
-  footer {
-    width: 100%;
-    margin: 0;
-    padding: 25px 10px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .social-links a {
-    font-size: 28px;
-  }
+    footer {
+        width: 100%;
+        margin: 0;
+        padding: 25px 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
 }
