@@ -5,7 +5,6 @@ body {
     color: #e4e4e7;
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* HEADER */
@@ -26,7 +25,15 @@ header h2 {
     color: #a1a1aa;
 }
 
-/* SEARCH */
+/* SEARCH BAR */
+.search-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 #search-input {
     border-radius: 30px;
     border: 1px solid #27272a;
@@ -34,7 +41,6 @@ header h2 {
     width: 300px;
     font-family: "Outfit", sans-serif;
     text-align: center;
-    margin: 5px;
     cursor: pointer;
     background-color: #121212;
     color: #ffffff;
@@ -67,11 +73,7 @@ header h2 {
     box-shadow: 0 0 25px rgba(34, 197, 94, 0.7);
 }
 
-.search-container {
-    margin: 20px;
-}
-
-/* VIEW BUTTONS */
+/* NAVIGATION / VIEW BUTTONS */
 .view-buttons {
     display: flex;
     justify-content: center;
@@ -104,7 +106,7 @@ header h2 {
     box-shadow: 0 0 15px rgba(34, 197, 94, 0.6);
 }
 
-/* MOVIES */
+/* MOVIES GRID */
 .movie-container {
     display: none;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -168,15 +170,7 @@ header h2 {
     color: #22c55e;
 }
 
-.no-results {
-    grid-column: 1 / -1;
-    text-align: center;
-    padding: 40px;
-    font-size: 18px;
-    color: #71717a;
-}
-
-/* FOOTER */
+/* FOOTER & SOCIALS */
 footer {
     text-align: center;
     background-color: #050505;
@@ -188,31 +182,6 @@ footer {
     padding: 20px 0;
 }
 
-/* DARK MODE OVERRIDES */
-body.dark-mode {
-    background-color: #080808;
-    color: #e4e4e7;
-}
-
-dark-mode-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: 1px solid #22c55e;
-    border-radius: 25px;
-    background-color: #09090b;
-    color: #22c55e;
-    font-family: "Outfit", sans-serif;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-dark-mode-btn:hover {
-    background-color: #22c55e;
-    color: #000000;
-    box-shadow: 0 0 15px rgba(34, 197, 94, 0.5);
-}
-
-/* SOCIALS */
 .social-links {
     display: flex;
     justify-content: center;
@@ -232,51 +201,39 @@ dark-mode-btn:hover {
     color: #4ade80;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE (MOBILE) */
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
     }
 
     header h1 {
-        font-size: 60px;
+        font-size: 48px;
+    }
+
+    .search-container {
+        flex-direction: column;
     }
 
     #search-input {
         width: 90%;
-        max-width: 100%;
-        box-sizing: border-box;
     }
 
     #search-button {
         width: 160px;
-        margin-top: 15px;
     }
 
-    .controls,
-    .buttons-container {
-        display: flex;
+    .view-buttons {
         flex-direction: column;
         align-items: center;
-        gap: 12px;
     }
 
-    .controls button,
-    .buttons-container button,
-    #dark-mode-btn {
+    .view-buttons button {
         width: 200px;
     }
 
     .movie-card {
         width: 90%;
         margin: auto;
-    }
-
-    footer {
-        width: 100%;
-        margin: 0;
-        padding: 25px 10px;
-        box-sizing: border-box;
-        text-align: center;
     }
 }
