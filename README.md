@@ -30,8 +30,7 @@ A modern and responsive movie website where users can discover, search, and expl
 3. Open "index.html" in your browser: saratazi.github.io/Cinezone.
 
 📸 Preview
-
-<img width="1340" height="619" alt="image" src="https://github.com/user-attachments/assets/a736cc17-7a36-4019-8832-2d33345d0351" />
+<img width="1345" height="617" alt="image" src="https://github.com/user-attachments/assets/c3ed4276-9ed9-4546-aa12-f597a80a0886" />
 
 
 📄 License
